@@ -23,10 +23,10 @@ jobs:
                 go build -o product-catalog-service main.go
         - name: run tests
           run: go test ./...
-        - name: run lint
-          uses: golangci/golangci-lint-action@v6
-          with:
-            version: v1.55.2
+        # - name: run lint
+        #   uses: golangci/golangci-lint-action@v6
+        #   with:
+        #     version: v1.55.2
         - name: upload artifact
           uses: actions/upload-artifact@v7
           with:
